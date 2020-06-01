@@ -4,7 +4,7 @@
   "description": "This is for custom domain configuration and SSL generation. The purpose is to provide user/client handy white label product that user/client can easily set their domain and design.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index"
   },
   "repository": {
     "type": "git",

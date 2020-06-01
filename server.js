@@ -8,7 +8,7 @@ const app = express()
 app.use(compression())
 
 // Place your build in this directory
-app.use(express.static(path.join(__dirname, 'dist/walletscan')))
+app.use(express.static(path.join(__dirname, 'dist/')))
 
 
 // Use to avoid cross origin block
@@ -28,7 +28,7 @@ endpoints(app)
 
 // Serve your front-end application here
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'dist/walletscan', 'index.html'))
+    res.sendFile(path.join(__dirname, 'dist/', 'index.html'))
 })
 
 // Starting both http & https servers

@@ -30,4 +30,8 @@ npm install
 npm run start
 ```
 
-Hit the api for generating SSL and `NGINX` config file
+After running your app on the server hit the following api for generating SSL and `NGINX` config file.
+
+```
+curl -XGET -H "Content-type: application/json" 'https://<yourhostname>/api/generate/ssl/<domain>'
+```
